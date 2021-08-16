@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>Semantic HTML tags cheatsheet</title>
+</head>
+<body>
+    <h1>Semantic HTML tags</h1>
+    <table>
+        <thead>
+            <th>Tag</th>
+            <th>Description</th>
+            <th>Additional information</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td><span class="code">&lt;section&gt;</span></td>
+                <td>Generic standalone section of a document, which doesn't have a more specific semantic element to represent it.</td>
+                <td>Sections should always have a heading, with very few exceptions. Otherwise, there will be a section without a heading in a document outline.</td>
+            </tr>
+            <tr>
+                <td rowspan="2"><span class="code">&lt;article&gt;</span></td>
+                <td rowspan="2">Self-contained composition in a document, which is intended to be independently distributable or reusable (can be plucked out of the document and distributed in a completely different context.)</td>
+                <td>Author information of an <span class="code">&lt;article&gt;</span> element can be provided through the <span class="code">&lt;address&gt;</span> element.</td>
+            </tr>
+            <tr>
+                <td>The publication date and time of an <span class="code">&lt;article&gt;</span> element can be described using the <span class="code">datetime</span> attribute of a <span class="code">&lt;time&gt;</span> element.</td>
+            </tr>
+            <tr>
+                <td><span class="code">&lt;nav&gt;</span></td>
+                <td>A section of a page whose purpose is to provide navigation links, either within the current document or to other documents.</td>
+                <td>A document may have several <span class="code">&lt;nav&gt;</span> elements, for example, one for site navigation and one for intra-page navigation.</td>
+            </tr>
+            <tr>
+                <td><span class="code">&lt;aside&gt;</span></td>
+                <td>A portion of a document whose content is only indirectly related to the document's main content. Asides are frequently presented as sidebars or call-out boxes.</td>
+                <td>Do not use the <span class="code">&lt;aside&gt;</span> element to tag parenthesized text, as this kind of text is considered part of the main flow.</td>
+            </tr>
+            <tr>
+                <td><span class="code">&lt;header&gt;</span></td>
+                <td>Introductory content, typically a group of introductory or navigational aids. It may contain some heading elements but also a logo, a search form, an author name, and other elements.</td>
+                <td rowspan="2">
+                    <p>A document may have several <span class="code">&lt;header&gt;</span> or <span class="code">&lt;footer&gt;</span> elements in different parts of a document.</p>
+                    <p>The <span class="code">&lt;header&gt;</span> and <span class="code">&lt;footer&gt;</span> elements are not sectioning content and therefore doesn't introduce a new section in the outline.</p>
+                </td>
+            </tr>
+            <tr>
+                <td><span class="code">&lt;footer&gt;</span></td>
+                <td>A footer for its nearest sectioning content or sectioning root element. A <span class="code">&lt;footer&gt;</span> typically contains information about the author of the section, copyright data or links to related documents.</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
